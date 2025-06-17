@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Welcome to the Calculator Home Page</h1>
+<p>Use the URL format <code>/calc/num1/num2/operation</code></p>
+<p>Example: <a href="{{ url_for('calc', num1=10, num2=5, operation='add') }}">/calc/10/5/add</a></p>
+{% endblock %}

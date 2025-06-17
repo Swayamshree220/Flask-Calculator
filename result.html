@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="result-container">
+        <h2>Your Calculation Result</h2>
+        <div class="result-box">
+            <p><strong>Input:</strong> {{ num1 }} {{ op }} {{ num2 }}</p>
+            <p><strong>Output:</strong> {{ output }}</p>
+        </div>
+        <a href="{{ url_for('input_page') }}" class="btn">Back to Calculator</a>
+    </div>
+{% endblock %}
